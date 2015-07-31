@@ -128,6 +128,11 @@ public class CandleStickChartRenderer: LineScatterCandleRadarChartRenderer
             
             trans.rectValueToPixel(&_bodyRect)
             
+            //柱形不应该太小，影响美观
+            if _bodyRect.size.height < dataSet.shadowWidth*2{
+                _bodyRect.size.height = dataSet.shadowWidth*2
+            }
+            
             // draw body differently for increasing and decreasing entry
             
             if (e.open > e.close)

@@ -606,7 +606,7 @@ public class BarLineChartViewBase: ChartViewBase, UIGestureRecognizerDelegate
         }
     }
     
-    @objc private func pinchGestureRecognized(recognizer: UIPinchGestureRecognizer)
+    @objc func pinchGestureRecognized(recognizer: UIPinchGestureRecognizer)
     {
         if (recognizer.state == UIGestureRecognizerState.Began)
         {

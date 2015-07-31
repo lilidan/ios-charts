@@ -13,7 +13,6 @@
 
 #import <UIKit/UIKit.h>
 #import "DemoBaseViewController.h"
-#import <Charts/Charts.h>
 
 @interface CandleStickChartViewController : DemoBaseViewController
 

@@ -54,8 +54,6 @@
 		5BEAED261ABC0BE20013F194 /* MultipleBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEAED211ABC0BE20013F194 /* MultipleBarChartViewController.xib */; };
 		5BEAED271ABC0BE20013F194 /* MultipleLinesChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAED231ABC0BE20013F194 /* MultipleLinesChartViewController.m */; };
 		5BEAED281ABC0BE20013F194 /* MultipleLinesChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEAED241ABC0BE20013F194 /* MultipleLinesChartViewController.xib */; };
-		5BEAED2C1ABC160F0013F194 /* CandleStickChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAED2A1ABC160F0013F194 /* CandleStickChartViewController.m */; };
-		5BEAED2D1ABC160F0013F194 /* CandleStickChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEAED2B1ABC160F0013F194 /* CandleStickChartViewController.xib */; };
 		5BEAED311ABC18F00013F194 /* CubicLineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAED2F1ABC18F00013F194 /* CubicLineChartViewController.m */; };
 		5BEAED321ABC18F00013F194 /* CubicLineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEAED301ABC18F00013F194 /* CubicLineChartViewController.xib */; };
 		5BEAED361ABC192F0013F194 /* RadarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAED341ABC192F0013F194 /* RadarChartViewController.m */; };
@@ -64,6 +62,9 @@
 		5BEAED3C1ABC199F0013F194 /* ColoredLineChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEAED3A1ABC199F0013F194 /* ColoredLineChartViewController.xib */; };
 		5BEAED401ABC1AC60013F194 /* SinusBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAED3E1ABC1AC60013F194 /* SinusBarChartViewController.m */; };
 		5BEAED411ABC1AC60013F194 /* SinusBarChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BEAED3F1ABC1AC60013F194 /* SinusBarChartViewController.xib */; };
+		63F49E801B6B874400FD5AC7 /* CandleStickChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F49E7E1B6B874300FD5AC7 /* CandleStickChartViewController.m */; };
+		63F49E811B6B874400FD5AC7 /* CandleStickChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F49E7F1B6B874400FD5AC7 /* CandleStickChartViewController.xib */; };
+		63F49E831B6B874E00FD5AC7 /* kLine.txt in Resources */ = {isa = PBXBuildFile; fileRef = 63F49E821B6B874E00FD5AC7 /* kLine.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,9 +164,6 @@
 		5BEAED221ABC0BE20013F194 /* MultipleLinesChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleLinesChartViewController.h; sourceTree = "<group>"; };
 		5BEAED231ABC0BE20013F194 /* MultipleLinesChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleLinesChartViewController.m; sourceTree = "<group>"; };
 		5BEAED241ABC0BE20013F194 /* MultipleLinesChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleLinesChartViewController.xib; sourceTree = "<group>"; };
-		5BEAED291ABC160F0013F194 /* CandleStickChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleStickChartViewController.h; sourceTree = "<group>"; };
-		5BEAED2A1ABC160F0013F194 /* CandleStickChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleStickChartViewController.m; sourceTree = "<group>"; };
-		5BEAED2B1ABC160F0013F194 /* CandleStickChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandleStickChartViewController.xib; sourceTree = "<group>"; };
 		5BEAED2E1ABC18F00013F194 /* CubicLineChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubicLineChartViewController.h; sourceTree = "<group>"; };
 		5BEAED2F1ABC18F00013F194 /* CubicLineChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubicLineChartViewController.m; sourceTree = "<group>"; };
 		5BEAED301ABC18F00013F194 /* CubicLineChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CubicLineChartViewController.xib; sourceTree = "<group>"; };
@@ -178,6 +176,10 @@
 		5BEAED3D1ABC1AC60013F194 /* SinusBarChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinusBarChartViewController.h; sourceTree = "<group>"; };
 		5BEAED3E1ABC1AC60013F194 /* SinusBarChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinusBarChartViewController.m; sourceTree = "<group>"; };
 		5BEAED3F1ABC1AC60013F194 /* SinusBarChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SinusBarChartViewController.xib; sourceTree = "<group>"; };
+		63F49E7D1B6B874300FD5AC7 /* CandleStickChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandleStickChartViewController.h; sourceTree = "<group>"; };
+		63F49E7E1B6B874300FD5AC7 /* CandleStickChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandleStickChartViewController.m; sourceTree = "<group>"; };
+		63F49E7F1B6B874400FD5AC7 /* CandleStickChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CandleStickChartViewController.xib; sourceTree = "<group>"; };
+		63F49E821B6B874E00FD5AC7 /* kLine.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kLine.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +294,10 @@
 		5BD8F06F1AB89C7100566E05 /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				63F49E821B6B874E00FD5AC7 /* kLine.txt */,
+				63F49E7D1B6B874300FD5AC7 /* CandleStickChartViewController.h */,
+				63F49E7E1B6B874300FD5AC7 /* CandleStickChartViewController.m */,
+				63F49E7F1B6B874400FD5AC7 /* CandleStickChartViewController.xib */,
 				5BEAED0F1ABBFB2B0013F194 /* AnotherBarChartViewController.h */,
 				5BEAED101ABBFB2B0013F194 /* AnotherBarChartViewController.m */,
 				5BEAED111ABBFB2B0013F194 /* AnotherBarChartViewController.xib */,
@@ -301,9 +307,6 @@
 				55E3564E1ADC638F00A57971 /* BubbleChartViewController.h */,
 				55E3564F1ADC638F00A57971 /* BubbleChartViewController.m */,
 				55E3564D1ADC638F00A57971 /* BubbleChartViewController.xib */,
-				5BEAED291ABC160F0013F194 /* CandleStickChartViewController.h */,
-				5BEAED2A1ABC160F0013F194 /* CandleStickChartViewController.m */,
-				5BEAED2B1ABC160F0013F194 /* CandleStickChartViewController.xib */,
 				5BEAED381ABC199F0013F194 /* ColoredLineChartViewController.h */,
 				5BEAED391ABC199F0013F194 /* ColoredLineChartViewController.m */,
 				5BEAED3A1ABC199F0013F194 /* ColoredLineChartViewController.xib */,
@@ -430,7 +433,6 @@
 				5B43162E1AB8D8AE0009FCAA /* iTunesArtwork@2x in Resources */,
 				5B4316281AB8D8AE0009FCAA /* Icon-29@3x.png in Resources */,
 				5B4316361AB8D8B70009FCAA /* Default-667h@2x.png in Resources */,
-				5BEAED2D1ABC160F0013F194 /* CandleStickChartViewController.xib in Resources */,
 				5BD47E611ABB3C91008FCEC6 /* LineChart2ViewController.xib in Resources */,
 				5BEAED131ABBFB2B0013F194 /* AnotherBarChartViewController.xib in Resources */,
 				5BEAED411ABC1AC60013F194 /* SinusBarChartViewController.xib in Resources */,
@@ -439,6 +441,7 @@
 				5B8EAF241AB3271B009697AA /* DemoListViewController.xib in Resources */,
 				5BEAED261ABC0BE20013F194 /* MultipleBarChartViewController.xib in Resources */,
 				5B43162A1AB8D8AE0009FCAA /* Icon-40@3x.png in Resources */,
+				63F49E811B6B874400FD5AC7 /* CandleStickChartViewController.xib in Resources */,
 				5BEAED3C1ABC199F0013F194 /* ColoredLineChartViewController.xib in Resources */,
 				5BEAED321ABC18F00013F194 /* CubicLineChartViewController.xib in Resources */,
 				5BEAED281ABC0BE20013F194 /* MultipleLinesChartViewController.xib in Resources */,
@@ -454,6 +457,7 @@
 				5B4316371AB8D8B70009FCAA /* Default-736h@3x.png in Resources */,
 				5B4316291AB8D8AE0009FCAA /* Icon-40@2x.png in Resources */,
 				5BEAED1E1ABBFB340013F194 /* StackedBarChartViewController.xib in Resources */,
+				63F49E831B6B874E00FD5AC7 /* kLine.txt in Resources */,
 				5B4316271AB8D8AE0009FCAA /* Icon-29@2x.png in Resources */,
 				55E356501ADC638F00A57971 /* BubbleChartViewController.xib in Resources */,
 				5B43162C1AB8D8AE0009FCAA /* Icon-60@3x.png in Resources */,
@@ -477,8 +481,8 @@
 				5BEAED251ABC0BE20013F194 /* MultipleBarChartViewController.m in Sources */,
 				5B57BBB81A9B26AA0036A6CC /* AppDelegate.m in Sources */,
 				55E356511ADC638F00A57971 /* BubbleChartViewController.m in Sources */,
+				63F49E801B6B874400FD5AC7 /* CandleStickChartViewController.m in Sources */,
 				5BD47E5B1ABB0263008FCEC6 /* BalloonMarker.swift in Sources */,
-				5BEAED2C1ABC160F0013F194 /* CandleStickChartViewController.m in Sources */,
 				5BEAED271ABC0BE20013F194 /* MultipleLinesChartViewController.m in Sources */,
 				5B8EAF281AB32CF5009697AA /* DemoBaseViewController.m in Sources */,
 				5BEAED3B1ABC199F0013F194 /* ColoredLineChartViewController.m in Sources */,

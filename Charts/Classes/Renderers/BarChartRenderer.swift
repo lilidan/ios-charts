@@ -146,7 +146,12 @@ public class BarChartRenderer: ChartDataRendererBase
                 
                 // Set the color for the currently drawn value. If the index is out of bounds, reuse colors.
                 CGContextSetFillColorWithColor(context, dataSet.colorAt(j).CGColor)
-                CGContextFillRect(context, barRect)
+               // CGContextFillRect(context, barRect)
+                //改为画圆角
+                
+                let path = UIBezierPath(roundedRect: barRect, cornerRadius: barRect.width/2)
+                path.fill()
+                CGContextFillPath(context);
             }
             else
             {

@@ -54,7 +54,6 @@ public class CandleStickChartRenderer: LineScatterCandleRadarChartRenderer
     
     private var _shadowPoints = [CGPoint](count: 2, repeatedValue: CGPoint())
     private var _bodyRect = CGRect()
-    private var _lineSegments = [CGPoint](count: 2, repeatedValue: CGPoint())
     
     internal func drawDataSet(#context: CGContext, dataSet: CandleChartDataSet)
     {
@@ -129,10 +128,10 @@ public class CandleStickChartRenderer: LineScatterCandleRadarChartRenderer
             trans.rectValueToPixel(&_bodyRect)
             
             //柱形不应该太小，影响美观
-            if _bodyRect.size.height < dataSet.shadowWidth*2{
-                _bodyRect.size.height = dataSet.shadowWidth*2
+            if _bodyRect.size.height < dataSet.shadowWidth {
+                _bodyRect.size.height = dataSet.shadowWidth
             }
-            
+
             // draw body differently for increasing and decreasing entry
             
             if (e.open > e.close)
@@ -187,6 +186,7 @@ public class CandleStickChartRenderer: LineScatterCandleRadarChartRenderer
         var defaultValueFormatter = delegate!.candleStickChartDefaultRendererValueFormatter(self)
         
         // if values are drawn
+                
         if (candleData.yValCount < Int(ceil(CGFloat(delegate!.candleStickChartRendererMaxVisibleValueCount(self)) * viewPortHandler.scaleX)))
         {
             var dataSets = candleData.dataSets

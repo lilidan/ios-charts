@@ -188,7 +188,7 @@ public class ChartViewPortHandler: NSObject
     {
         let translateX = pt.x - offsetLeft
         let translateY = pt.y - offsetTop
-        
+         
         var matrix = CGAffineTransformConcat(_touchMatrix, CGAffineTransformMakeTranslation(-translateX, -translateY))
         
         refresh(newMatrix: matrix, chart: chart, invalidate: true)

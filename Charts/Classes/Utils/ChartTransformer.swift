@@ -272,6 +272,7 @@ public class ChartTransformer: NSObject
         return CGPointApplyAffineTransform(point, pixelToValueMatrix)
     }
     
+    
     public var valueToPixelMatrix: CGAffineTransform
     {
         return

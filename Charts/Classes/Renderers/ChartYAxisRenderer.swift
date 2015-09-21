@@ -22,7 +22,6 @@ public class ChartYAxisRenderer: ChartAxisRendererBase
     public init(viewPortHandler: ChartViewPortHandler, yAxis: ChartYAxis, transformer: ChartTransformer!)
     {
         super.init(viewPortHandler: viewPortHandler, transformer: transformer)
-        
         _yAxis = yAxis
     }
     

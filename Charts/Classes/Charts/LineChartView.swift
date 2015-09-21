@@ -31,7 +31,7 @@ public class LineChartView: BarLineChartViewBase, LineChartRendererDelegate
     internal override func calcMinMax()
     {
         super.calcMinMax()
-        
+
         if (_deltaX == 0.0 && _data.yValCount > 0)
         {
             _deltaX = 1.0

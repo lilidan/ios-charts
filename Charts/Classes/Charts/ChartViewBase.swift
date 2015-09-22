@@ -28,7 +28,7 @@ public protocol ChartViewDelegate
     optional func chartValueNothingSelected(chartView: ChartViewBase)
     
     // Callbacks when the chart is scaled / zoomed via pinch zoom gesture.
-    optional func chartScaled(chartView: ChartViewBase, scaleX: CGFloat, scaleY: CGFloat)
+    optional func chartScaled(chartView: ChartViewBase, scaleX: CGFloat, scaleY: CGFloat, originX: CGFloat, originY: CGFloat)
     
     // Callbacks when the chart is moved / translated via drag gesture.
     optional func chartTranslated(chartView: ChartViewBase, dX: CGFloat, dY: CGFloat)
@@ -84,7 +84,7 @@ public class ChartViewBase: UIView, ChartAnimatorDelegate
     public weak var delegate: ChartViewDelegate?
     
     /// text that is displayed when the chart is empty
-    public var noDataText = "No chart data available."
+    public var noDataText = " "
     
     /// text that is displayed when the chart is empty that describes why the chart is empty
     public var noDataTextDescription: String?

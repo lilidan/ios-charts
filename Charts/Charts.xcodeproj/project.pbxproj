@@ -95,6 +95,7 @@
 		5BB6EC1D1ACC28AB006E9C25 /* ChartTransformerHorizontalBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB6EC1C1ACC28AB006E9C25 /* ChartTransformerHorizontalBarChart.swift */; };
 		5BD8F06D1AB897D500566E05 /* ChartViewPortHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD8F06C1AB897D500566E05 /* ChartViewPortHandler.swift */; };
 		5BD8F06E1AB89AD800566E05 /* HorizontalBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A54A01AA66B6A000F57C2 /* HorizontalBarChartView.swift */; };
+		D6A8EAEC1BB0DDEE00AA5B8E /* SCChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8EAEB1BB0DDEE00AA5B8E /* SCChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -188,6 +189,7 @@
 		5BAAA8551BB08E1D00B20D4D /* CombinedHighlighter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombinedHighlighter.swift; sourceTree = "<group>"; };
 		5BB6EC1C1ACC28AB006E9C25 /* ChartTransformerHorizontalBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartTransformerHorizontalBarChart.swift; sourceTree = "<group>"; };
 		5BD8F06C1AB897D500566E05 /* ChartViewPortHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewPortHandler.swift; sourceTree = "<group>"; };
+		D6A8EAEB1BB0DDEE00AA5B8E /* SCChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +275,7 @@
 		5BA8EC361A9D14DC00CE82E1 = {
 			isa = PBXGroup;
 			children = (
+				D6A8EAEB1BB0DDEE00AA5B8E /* SCChartView.swift */,
 				5BA8EC651A9D151C00CE82E1 /* Classes */,
 				5BA8EC431A9D14DC00CE82E1 /* Supporting Files */,
 				5BA8EC411A9D14DC00CE82E1 /* Products */,
@@ -504,6 +507,7 @@
 				5B6654DB1BB0A86F00890030 /* ChartXAxisValueFormatter.swift in Sources */,
 				5B6A54A31AA66B7C000F57C2 /* LineChartView.swift in Sources */,
 				5B6A54891AA66A1A000F57C2 /* PieChartRenderer.swift in Sources */,
+				D6A8EAEC1BB0DDEE00AA5B8E /* SCChartView.swift in Sources */,
 				5B6A54DD1AA74516000F57C2 /* RadarChartData.swift in Sources */,
 				5B6A54991AA66B14000F57C2 /* BarChartView.swift in Sources */,
 				5B680D231A9D17C30026A057 /* ChartYAxis.swift in Sources */,

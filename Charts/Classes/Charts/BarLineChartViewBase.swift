@@ -447,7 +447,7 @@ public class BarLineChartViewBase: ChartViewBase, UIGestureRecognizerDelegate
             offsetBottom += self.extraBottomOffset
             offsetLeft += self.extraLeftOffset
             
-            let minOffset = CGFloat(10.0)
+            let minOffset = CGFloat(0)
             
             _viewPortHandler.restrainViewPort(
                 offsetLeft: max(minOffset, offsetLeft),
@@ -605,7 +605,7 @@ public class BarLineChartViewBase: ChartViewBase, UIGestureRecognizerDelegate
     private var _decelerationDisplayLink: CADisplayLink!
     private var _decelerationVelocity = CGPoint()
     
-    @objc private func tapGestureRecognized(recognizer: UITapGestureRecognizer)
+    @objc func tapGestureRecognized(recognizer: UITapGestureRecognizer)
     {
         if (_dataNotSet)
         {
@@ -657,7 +657,7 @@ public class BarLineChartViewBase: ChartViewBase, UIGestureRecognizerDelegate
         }
     }
     
-    @objc private func pinchGestureRecognized(recognizer: UIPinchGestureRecognizer)
+    @objc func pinchGestureRecognized(recognizer: UIPinchGestureRecognizer)
     {
         if (recognizer.state == UIGestureRecognizerState.Began)
         {
@@ -734,7 +734,7 @@ public class BarLineChartViewBase: ChartViewBase, UIGestureRecognizerDelegate
                     
                     if (delegate !== nil)
                     {
-                        delegate?.chartScaled?(self, scaleX: scaleX, scaleY: scaleY)
+                        delegate?.chartScaled?(self, scaleX: scaleX, scaleY: scaleY, originX : location.x, originY: location.y)
                     }
                 }
                 
@@ -743,7 +743,7 @@ public class BarLineChartViewBase: ChartViewBase, UIGestureRecognizerDelegate
         }
     }
     
-    @objc private func panGestureRecognized(recognizer: UIPanGestureRecognizer)
+    @objc func panGestureRecognized(recognizer: UIPanGestureRecognizer)
     {
         if (recognizer.state == UIGestureRecognizerState.Began && recognizer.numberOfTouches() > 0)
         {
@@ -1078,7 +1078,7 @@ public class BarLineChartViewBase: ChartViewBase, UIGestureRecognizerDelegate
 
     /// Moves the left side of the current viewport to the specified x-index.
     /// This also refreshes the chart by calling setNeedsDisplay().
-    public func moveViewToX(xIndex: Int)
+    public func moveViewToX(xIndex: CGFloat)
     {
         if (_viewPortHandler.hasChartDimens)
         {
@@ -1144,7 +1144,7 @@ public class BarLineChartViewBase: ChartViewBase, UIGestureRecognizerDelegate
     /// - parameter xIndex:
     /// - parameter yValue:
     /// - parameter axis: - which axis should be used as a reference for the y-axis
-    public func centerViewTo(xIndex xIndex: Int, yValue: CGFloat, axis: ChartYAxis.AxisDependency)
+    public func centerViewTo(xIndex xIndex: CGFloat, yValue: CGFloat, axis: ChartYAxis.AxisDependency)
     {
         if (_viewPortHandler.hasChartDimens)
         {

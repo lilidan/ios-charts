@@ -126,6 +126,11 @@ public class CandleStickChartRenderer: LineScatterCandleRadarChartRenderer
             
             // draw body differently for increasing and decreasing entry
             
+            //柱形不应该太小，影响美观
+            if _bodyRect.size.height < dataSet.shadowWidth*2{
+                 _bodyRect.size.height = dataSet.shadowWidth*2
+            }
+            
             if (e.open > e.close)
             {
                 let color = dataSet.decreasingColor ?? dataSet.colorAt(j)
